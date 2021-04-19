@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-decoration-lineの線の位置</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 2em;
+    }
+
+    .u {
+      text-decoration-line: underline;
+    }
+
+    .o {
+      text-decoration-line: overline;
+    }
+
+    .v {
+      writing-mode: vertical-rl;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <p class="u">
+    下線付きのテキスト。
+  </p>
+  <p class="u v">
+    下線付きのテキスト。
+  </p>
+</div>
+<div>
+  <p class="o">
+    上線付きのテキスト。
+  </p>
+  <p class="o v">
+    上線付きのテキスト。
+  </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-decoration-lineの線の位置</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 1em;
+    }
+
+    .auto {
+      text-decoration-thickness: auto;
+    }
+
+    .from-font {
+      text-decoration-thickness: from-font;
+    }
+
+    .length {
+      text-decoration-thickness: 1px;
+    }
+
+    .percentage {
+      text-decoration-thickness: 20%;
+    }
+
+    p {
+      color: darkgray;
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+      text-decoration-line: underline;
+      text-decoration-color: red;
+    }
+
+    .s {
+      font-size: 10px;
+    }
+
+    .m {
+      font-size: 16px;
+    }
+
+    .l {
+      font-size: 24px;
+    }
+
+    .xl {
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="auto">
+  <p class="s">
+    自動
+  </p>
+  <p class="m">
+    自動
+  </p>
+  <p class="l">
+    自動
+  </p>
+  <p class="xl">
+    自動
+  </p>
+</div>
+
+<div class="from-font">
+  <p class="s">
+    フォント依存
+  </p>
+  <p class="m">
+    フォント依存
+  </p>
+  <p class="l">
+    フォント依存
+  </p>
+  <p class="xl">
+    フォント依存
+  </p>
+</div>
+
+<div class="length">
+  <p class="s">
+    長さ
+  </p>
+  <p class="m">
+    長さ
+  </p>
+  <p class="l">
+    長さ
+  </p>
+  <p class="xl">
+    長さ
+  </p>
+</div>
+
+<div class="percentage">
+  <p class="s">
+    パーセンテージ
+  </p>
+  <p class="m">
+    パーセンテージ
+  </p>
+  <p class="l">
+    パーセンテージ
+  </p>
+  <p class="xl">
+    パーセンテージ
+  </p>
+</div>
+
+</body>
+</html>

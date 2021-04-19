@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-decoration-lineの線の位置</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 1em;
+    }
+
+    p {
+      color: darkgray;
+      text-decoration-line: underline;
+      text-decoration-color: red;
+      text-decoration-thickness: from-font;
+    }
+
+    .hiragino {
+      font-family: 'Hiragino Kaku Gothic ProN', sans-serif;
+    }
+
+    .osaka {
+      font-family: "Osaka", sans-serif;
+    }
+
+    .s {
+      font-size: 10px;
+    }
+
+    .m {
+      font-size: 16px;
+    }
+
+    .l {
+      font-size: 24px;
+    }
+
+    .xl {
+      font-size: 32px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hiragino">
+  <p class="s">
+    ヒラギノ
+  </p>
+  <p class="m">
+    ヒラギノ
+  </p>
+  <p class="l">
+    ヒラギノ
+  </p>
+  <p class="xl">
+    ヒラギノ
+  </p>
+</div>
+
+<div class="osaka">
+  <p class="s">
+    Osaka
+  </p>
+  <p class="m">
+    Osaka
+  </p>
+  <p class="l">
+    Osaka
+  </p>
+  <p class="xl">
+    Osaka
+  </p>
+</div>
+
+</body>
+</html>
