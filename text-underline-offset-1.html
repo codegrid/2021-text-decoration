@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-underline-offset</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 2em;
+    }
+
+    p {
+      font-size: 18px;
+      font-family: "Times New Roman", serif;
+      text-decoration-line: underline;
+      text-decoration-color: tomato;
+    }
+
+    .length {
+      text-underline-offset: 10px;
+    }
+
+    .percentage {
+      text-underline-offset: 20%;
+    }
+
+    .large {
+      font-size: 36px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <p>auto</p>
+  <p class="large">auto</p>
+</div>
+<div>
+  <p class="length">length (10px)</p>
+  <p class="large length">length (10px)</p>
+</div>
+<div>
+  <p class="percentage">percentage (20%)</p>
+  <p class="large percentage">percentage (20%)</p>
+</div>
+
+</body>
+</html>

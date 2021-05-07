@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-underline-offset</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 2em;
+    }
+
+    p {
+      font-size: 24px;
+      font-family: "Times New Roman", serif;
+      text-decoration-line: underline;
+      text-decoration-color: tomato;
+      text-underline-offset: 0.2em;
+    }
+
+    .under {
+      text-underline-position: under;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <p>auto positioned</p>
+</div>
+<div>
+  <p class="under">under positioned</p>
+</div>
+
+</body>
+</html>

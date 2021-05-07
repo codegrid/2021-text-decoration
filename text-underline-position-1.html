@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-underline-position</title>
+  <style>
+    body {
+      display: flex;
+    }
+
+    div {
+      margin: 2em;
+    }
+
+    p {
+      font-size: 24px;
+      text-decoration-line: underline;
+      text-decoration-color: tomato;
+    }
+
+    .auto {
+      text-underline-position: auto;
+    }
+
+    .under {
+      text-underline-position: under;
+    }
+
+    .serif {
+      font-family: "Times New Roman", serif;
+    }
+
+    .sans-serif {
+      font-family: "San Francisco", sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <p class="auto serif">
+    (auto positioned)
+  </p>
+  <p class="auto sans-serif">
+    (auto positioned)
+  </p>
+</div>
+<div>
+  <p class="under serif">
+    (under positioned)
+  </p>
+  <p class="under sans-serif">
+    (under positioned)
+  </p>
+</div>
+
+</body>
+</html>
